@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "usb-plug-notification-linux"
-version = "0.1.1"
+version = "0.1.2"
 description = "Python script to get plug/unplug events on Linux"
 authors = ["Dick Marinus"]
 license = "GPL-3-or-later"

@@ -1,5 +1,4 @@
 import pyudev
-import gi.repository.Gio
 import click
 import time
 
@@ -11,7 +10,6 @@ def main(idvendor, idproduct):
     context = pyudev.Context()
     monitor = pyudev.Monitor.from_netlink(context)
     monitor.filter_by("usb")
-    gsettings = gi.repository.Gio.Settings.new("org.gnome.desktop.session")
     last_t = 0
     idvendor = int(idvendor, 16)
     idproduct = int(idproduct, 16)
